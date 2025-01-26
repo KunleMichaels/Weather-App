@@ -23,7 +23,7 @@ interface WeatherCardProps {
             className="w-[150px]"
           />
           <h2 className="text-5xl font-bold mb-2" data-testid="weather-card-weather-temp">{weather.main.temp}{unit}</h2>
-          <p>{weather.weather[0].description}</p>
+          <p className="text-xl" data-testid="weather-card-weather-description">{weather.weather[0].description}</p>
           <p>Humidity: {weather.main.humidity}%</p>
           <p>Wind: {weather.wind.speed} m/s</p>
         </div>
